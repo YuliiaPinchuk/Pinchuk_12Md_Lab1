@@ -1,0 +1,111 @@
+/* Скидання відступів за замовчуванням */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: white;
+}
+
+/* Хедер */
+.header {
+  height: 150px;
+  background-color: #999;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Верхній блок */
+.top-block {
+  height: 550px;
+  background-color: #ffc89f;
+  text-align: center;
+  padding: 100px 20px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Основний контент */
+.content {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+/* Контейнер контенту */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  background-color: #ffcbcb;
+  padding: 40px 0;
+}
+
+/* Заголовок */
+.title-block {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffcbcb;
+}
+
+/* Текстовий блок */
+.text-block {
+  background-color: #50eec5;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Галерея */
+.gallery-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 40px 0 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "b1 b3 b6"
+    "b2 b4 b6"
+    "b2 b5 b7";
+  gap: 20px;
+}
+
+.box {
+  background-color: #8c88f7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.box1 { grid-area: b1; height: 100px; }
+.box2 { grid-area: b2; height: 220px; }
+.box3 { grid-area: b3; height: 100px; }
+.box4 { grid-area: b4; height: 100px; }
+.box5 { grid-area: b5; height: 100px; }
+.box6 { grid-area: b6; height: 220px; }
+.box7 { grid-area: b7; height: 100px; }
+
+/* Футер */
+.footer {
+  height: 400px;
+  background-color: #4c4c4c;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  box-sizing: border-box;
+  margin: 0;
+}
